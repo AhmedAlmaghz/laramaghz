@@ -16,9 +16,8 @@
         "laravelcollective/html":"^6.1.0",
         "mcamara/laravel-localization": "^1.5",
         "madnest/madzipper": "1.0.x",
-        "laravel/ui": ">=2.0",
-        "ext-zip": "*"
-        
+        "laravel/ui": ">=2.0"
+              
     },
     "autoload": {
         "psr-4": {
@@ -26,20 +25,11 @@
         
         }
     },
-    "require-dev": {
-        "orchestra/testbench": "~3.0",
-        "orchestra/testbench-browser-kit": "~3.1"
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Almaghz\\Laramaghz\\Tests\\": "tests/"
-        }
-    },
-  
+   
     "extra": {
         "laravel": {
             "providers": [
-                "almaghz\\laramaghz\\Providers\\LaramaghzServiceProvider"
+                "Alaghz\\Lramaghz\\Providers\\LaramaghzServiceProvider"
             ]
         }
     }
