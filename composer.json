@@ -1,8 +1,10 @@
 {
     "name": "almaghz/laramaghz",
-    "description": "laraMaghz package",
+    "version": "0.1.0",
+    "description": "laraMaghz package - laravel Admin,web and API",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "keywords": ["laravel","laravel Admin","laramaghz","maghz","admin","web","api","crud"],
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Ahmed almaghz",
@@ -13,7 +15,9 @@
         "php": ">=7.0",
         "laravelcollective/html":"^6.1.0",
         "mcamara/laravel-localization": "^1.5",
-        "madnest/madzipper": "1.0.x"
+        "madnest/madzipper": "1.0.x",
+        "laravel/ui": ">=2.0",
+        "ext-zip": "*"
         
     },
     "autoload": {
@@ -31,6 +35,7 @@
             "Almaghz\\Laramaghz\\Tests\\": "tests/"
         }
     },
+  
     "extra": {
         "laravel": {
             "providers": [
