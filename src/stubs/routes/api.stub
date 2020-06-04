@@ -1,0 +1,14 @@
+<?php
+Route::group([
+  'prefix' => 'api/v1',
+  'namespace' => 'DummyNameSpace',
+  'middleware' => [
+    'api',
+    'almaghz\laramaghz\Laramaghz\Middelware\ParseMultipartFormDataInputForNonPostRequests'
+  ]
+], function () {
+
+  Route::resource('DummyUrl', 'DummyControllerNameController' , [ 'as' => 'api' ]);
+
+});
+
