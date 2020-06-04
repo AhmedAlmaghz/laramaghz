@@ -1,6 +1,6 @@
 <?php
 
-namespace almaghz\laramaghz\Providers;
+namespace Almaghz\Laramaghz\Providers;
 
 
 
