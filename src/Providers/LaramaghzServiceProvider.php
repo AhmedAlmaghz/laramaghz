@@ -31,7 +31,7 @@ use almaghz\laramaghz\Laramaghz\Commands\MigrationCommand;
 use almaghz\laramaghz\Laramaghz\Commands\ModelCommand;
 use almaghz\laramaghz\Laramaghz\Commands\SeederCommand;
 use almaghz\laramaghz\Laramaghz\Commands\ServiceProviderCommand;
-use almaghz\laramaghz\Laramaghz\traits\FileTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\FileTrait;
 
 
 class LaramaghzServiceProvider extends ServiceProvider
