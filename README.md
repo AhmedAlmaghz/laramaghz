@@ -43,14 +43,19 @@ composer require almaghz/laramaghz
 
  Done that's it
 
- ### 6- run Server
+ ### 6- install npm & run dev
  ```bash
-php artisan run serve
+ npm install & npm run dev
 ```
 
-### 7- Open your project in the browser and login to admin by
+### 7-Run Serve then Open your project in the browser and login to admin by
 
 ```bash
+/*run serve */
+php artisan run serve
+
+
+/* data login for admin */
 email : admin@laramaghz.com
 password : password
 ```
