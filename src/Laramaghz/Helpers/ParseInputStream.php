@@ -1,5 +1,5 @@
 <?php
-namespace almaghz\laramaghz\Laramaghz\Helpers;
+namespace Almaghz\Laramaghz\Laramaghz\Helpers;
 
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\File\UploadedFile;

@@ -1,11 +1,11 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Traits;
+namespace Almaghz\Laramaghz\Laramaghz\Traits;
 
 
-use almaghz\laramaghz\Laramaghz\Models\Column;
-use almaghz\laramaghz\Laramaghz\Models\Module;
-use almaghz\laramaghz\Laramaghz\Models\Relation;
+use Almaghz\Laramaghz\Laramaghz\Models\Column;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Models\Relation;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 trait ControllerTrait

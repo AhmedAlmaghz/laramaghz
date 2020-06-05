@@ -1,14 +1,14 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Commands;
+namespace Almaghz\Laramaghz\Laramaghz\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
-use almaghz\laramaghz\Laramaghz\Models\Module;
-use almaghz\laramaghz\Laramaghz\Traits\ModelRelationTrait;
-use almaghz\laramaghz\Laramaghz\Traits\ModelTrait;
-use almaghz\laramaghz\Laramaghz\Traits\MultiValueHandel;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Traits\ModelRelationTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\ModelTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\MultiValueHandel;
 use Illuminate\Support\Str;
 
 class ModelCommand extends Command

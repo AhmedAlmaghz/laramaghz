@@ -1,14 +1,14 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Commands;
+namespace Almaghz\Laramaghz\Laramaghz\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
 use Illuminate\Support\Facades\Artisan;
-use almaghz\laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
 use Illuminate\Support\Str;
-use almaghz\laramaghz\Laramaghz\Traits\SeederTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\SeederTrait;
 
 class SeederCommand extends Command
 {

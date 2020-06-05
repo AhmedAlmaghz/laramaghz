@@ -2,7 +2,7 @@
 namespace App\Modules\DummyClass\Database\Seeds;
 
 use Illuminate\Database\Seeder;
-use almaghz\laramaghz\Laramaghz\Models\MenuItem;
+use Almaghz\Laramaghz\Laramaghz\Models\MenuItem;
 
 class DummyClassSeeder extends Seeder
 {
@@ -21,7 +21,7 @@ class DummyClassSeeder extends Seeder
 
 DummyModule
 
-        \almaghz\laramaghz\Laramaghz\Models\Module::create($array);
+        \Almaghz\Laramaghz\Laramaghz\Models\Module::create($array);
 
         /*
          * column row insert in case you fresh your database
@@ -30,7 +30,7 @@ DummyModule
 
 DummyColumn
 
-        \almaghz\laramaghz\Laramaghz\Models\Column::insert($array);
+        \Almaghz\Laramaghz\Laramaghz\Models\Column::insert($array);
 
         /*
        * column Details row insert in case you fresh your database
@@ -39,7 +39,7 @@ DummyColumn
 
 DummyDetails
 
-        \almaghz\laramaghz\Laramaghz\Models\ColumnDetail::insert($array);
+        \Almaghz\Laramaghz\Laramaghz\Models\ColumnDetail::insert($array);
 
         /*
         * Module Relation row insert in case you fresh your database
@@ -49,7 +49,7 @@ DummyDetails
 DummyRelation
 
        if(!empty($array)){
-          \almaghz\laramaghz\Laramaghz\Models\Relation::insert($array);
+          \Almaghz\Laramaghz\Laramaghz\Models\Relation::insert($array);
        }
 
        /*

@@ -1,6 +1,6 @@
 <?php
 
-namespace almaghz\laramaghz\Traits;
+namespace Almaghz\Laramaghz\Traits;
 
 use Illuminate\Support\Facades\Storage;
 

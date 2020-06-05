@@ -1,9 +1,9 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Middelware;
+namespace Almaghz\Laramaghz\Laramaghz\Middelware;
 
 use Closure;
-use almaghz\laramaghz\Laramaghz\Helpers\ParseInputStream;
+use Almaghz\Laramaghz\Laramaghz\Helpers\ParseInputStream;
 
 class ParseMultipartFormDataInputForNonPostRequests
 {

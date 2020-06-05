@@ -1,6 +1,6 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Traits;
+namespace Almaghz\Laramaghz\Laramaghz\Traits;
 
 use Illuminate\Support\Facades\File;
 

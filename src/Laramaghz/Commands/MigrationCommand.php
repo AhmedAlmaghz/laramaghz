@@ -1,6 +1,6 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Commands;
+namespace Almaghz\Laramaghz\Laramaghz\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
@@ -8,10 +8,10 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
-use almaghz\laramaghz\Laramaghz\Models\Module;
-use almaghz\laramaghz\Laramaghz\Traits\MigrationTrait;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Traits\MigrationTrait;
 use Illuminate\Support\Str;
-use almaghz\laramaghz\Laramaghz\Traits\SeedsTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\SeedsTrait;
 
 class MigrationCommand extends Command
 {

@@ -6,10 +6,10 @@
  * Time: 2:37 AM
  */
 
-namespace almaghz\laramaghz\Laramaghz\Controllers\Admin;
+namespace Almaghz\Laramaghz\Laramaghz\Controllers\Admin;
 
-use almaghz\laramaghz\Laramaghz\Models\MenuItem;
-use almaghz\laramaghz\Laramaghz\Requests\ItemsRequest;
+use Almaghz\Laramaghz\Laramaghz\Models\MenuItem;
+use Almaghz\Laramaghz\Laramaghz\Requests\ItemsRequest;
 
 
 class ItemsController

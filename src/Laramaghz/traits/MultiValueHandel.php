@@ -1,8 +1,8 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Traits;
+namespace Almaghz\Laramaghz\Laramaghz\Traits;
 
-use almaghz\laramaghz\Laramaghz\Models\ColumnDetail;
+use Almaghz\Laramaghz\Laramaghz\Models\ColumnDetail;
 use Illuminate\Support\Str;
 
 trait MultiValueHandel{

@@ -1,6 +1,6 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Middelware;
+namespace Almaghz\Laramaghz\Laramaghz\Middelware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

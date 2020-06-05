@@ -1,6 +1,6 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Models;
+namespace Almaghz\Laramaghz\Laramaghz\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;

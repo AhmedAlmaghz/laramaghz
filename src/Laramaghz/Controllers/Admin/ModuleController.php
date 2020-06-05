@@ -6,12 +6,12 @@
  * Time: 2:37 AM
  */
 
-namespace almaghz\laramaghz\Laramaghz\Controllers\Admin;
+namespace Almaghz\Laramaghz\Laramaghz\Controllers\Admin;
 
 use Chumper\Zipper\Zipper;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use almaghz\laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
 
 class ModuleController
 {

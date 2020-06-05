@@ -151,7 +151,7 @@ return [
          * Package Service Providers...
          */
 
-        almaghz\laramaghz\Providers\laramaghzServiceProvider::class,
+        Almaghz\Laramaghz\Providers\laramaghzServiceProvider::class,
 
 
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Controllers\Admin;
+namespace Almaghz\Laramaghz\Laramaghz\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
-use almaghz\laramaghz\Laramaghz\Models\Column;
-use almaghz\laramaghz\Laramaghz\Models\ColumnDetail;
-use almaghz\laramaghz\Laramaghz\Models\Module;
-use almaghz\laramaghz\Laramaghz\Models\Relation;
-use almaghz\laramaghz\Laramaghz\Requests\StepFourRequest;
-use almaghz\laramaghz\Laramaghz\Requests\StepOneRequest;
-use almaghz\laramaghz\Laramaghz\Requests\StepTwoRequest;
-use almaghz\laramaghz\Laramaghz\Traits\TypesTrait;
+use Almaghz\Laramaghz\Laramaghz\Models\Column;
+use Almaghz\Laramaghz\Laramaghz\Models\ColumnDetail;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Models\Relation;
+use Almaghz\Laramaghz\Laramaghz\Requests\StepFourRequest;
+use Almaghz\Laramaghz\Laramaghz\Requests\StepOneRequest;
+use Almaghz\Laramaghz\Laramaghz\Requests\StepTwoRequest;
+use Almaghz\Laramaghz\Laramaghz\Traits\TypesTrait;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Illuminate\Support\Str;
 
