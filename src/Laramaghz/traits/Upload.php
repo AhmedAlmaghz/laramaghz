@@ -1,8 +1,8 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Traits;
+namespace Almaghz\Laramaghz\Laramaghz\Traits;
 
-use almaghz\laramaghz\Laramaghz\Models\Column;
+use Almaghz\Laramaghz\Laramaghz\Models\Column;
 
 trait Upload
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Traits;
+namespace Almaghz\Laramaghz\Laramaghz\Traits;
 
 
-use almaghz\laramaghz\Laramaghz\Seeders\ItemsSeeder;
+use Almaghz\Laramaghz\Laramaghz\Seeders\ItemsSeeder;
 
 trait laramaghzSeederTrait
 {

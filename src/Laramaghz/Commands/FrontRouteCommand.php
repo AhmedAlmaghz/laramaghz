@@ -1,11 +1,11 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Commands;
+namespace Almaghz\Laramaghz\Laramaghz\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
-use almaghz\laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
 
 class FrontRouteCommand extends Command
 {

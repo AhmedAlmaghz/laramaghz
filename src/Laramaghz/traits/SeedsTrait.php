@@ -1,10 +1,10 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Traits;
+namespace Almaghz\Laramaghz\Laramaghz\Traits;
 
-use almaghz\laramaghz\Laramaghz\Models\Menu;
-use almaghz\laramaghz\Laramaghz\Models\MenuItem;
-use almaghz\laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Models\Menu;
+use Almaghz\Laramaghz\Laramaghz\Models\MenuItem;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
 
 trait SeedsTrait
 {

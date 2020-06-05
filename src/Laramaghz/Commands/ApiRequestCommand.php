@@ -1,12 +1,12 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Commands;
+namespace Almaghz\Laramaghz\Laramaghz\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use almaghz\laramaghz\Laramaghz\Models\Module;
-use almaghz\laramaghz\Laramaghz\Traits\AdminRequestTrait;
-use almaghz\laramaghz\Laramaghz\Traits\FileTrait;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Traits\AdminRequestTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\FileTrait;
 use Illuminate\Support\Str;
 
 class ApiRequestCommand extends Command

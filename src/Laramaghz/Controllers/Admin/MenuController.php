@@ -6,13 +6,13 @@
  * Time: 2:37 AM
  */
 
-namespace almaghz\laramaghz\Laramaghz\Controllers\Admin;
+namespace Almaghz\Laramaghz\Laramaghz\Controllers\Admin;
 
 
-use almaghz\laramaghz\Laramaghz\Models\Menu;
-use almaghz\laramaghz\Laramaghz\Models\MenuItem;
-use almaghz\laramaghz\Laramaghz\Models\Module;
-use almaghz\laramaghz\Laramaghz\Requests\MenuRequest;
+use Almaghz\Laramaghz\Laramaghz\Models\Menu;
+use Almaghz\Laramaghz\Laramaghz\Models\MenuItem;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Requests\MenuRequest;
 
 class MenuController
 {

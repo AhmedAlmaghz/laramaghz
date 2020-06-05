@@ -1,6 +1,6 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Controllers\Admin;
+namespace Almaghz\Laramaghz\Laramaghz\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 

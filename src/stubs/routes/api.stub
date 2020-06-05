@@ -4,7 +4,7 @@ Route::group([
   'namespace' => 'DummyNameSpace',
   'middleware' => [
     'api',
-    'almaghz\laramaghz\Laramaghz\Middelware\ParseMultipartFormDataInputForNonPostRequests'
+    'Almaghz\Laramaghz\Laramaghz\Middelware\ParseMultipartFormDataInputForNonPostRequests'
   ]
 ], function () {
 

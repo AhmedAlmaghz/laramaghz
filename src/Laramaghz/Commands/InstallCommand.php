@@ -1,13 +1,13 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Commands;
+namespace Almaghz\Laramaghz\Laramaghz\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
 use Illuminate\Support\Facades\Artisan;
-use almaghz\laramaghz\Laramaghz\Traits\FileTrait;
-use almaghz\laramaghz\Laramaghz\Traits\SeedsTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\FileTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\SeedsTrait;
 
 
 class InstallCommand extends Command

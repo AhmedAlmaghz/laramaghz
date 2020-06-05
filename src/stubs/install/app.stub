@@ -80,7 +80,7 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                @foreach(\almaghz\laramaghz\Laramaghz\Models\Module::get() as $module)
+                                @foreach(\Almaghz\Laramaghz\Laramaghz\Models\Module::get() as $module)
                                     @php $route = 'front.'.mb_strtolower($module->name).'.index' @endphp
                                     @if(Route::has($route))
                                         <a href="{{ route($route) }}" class="dropdown-item"><i

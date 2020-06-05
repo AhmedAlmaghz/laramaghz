@@ -1,5 +1,5 @@
 @php
-    $adminMenu = almaghz\laramaghz\Laramaghz\Models\MenuItem::where('menu_id' , 1)
+    $adminMenu = Almaghz\Laramaghz\Laramaghz\Models\MenuItem::where('menu_id' , 1)
         ->orderBy('order')
         ->where('parent_id' ,0)
         ->with('parent')

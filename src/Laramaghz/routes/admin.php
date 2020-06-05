@@ -5,7 +5,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [
 ]], function () {
     Route::group([
         'prefix' => '/admin',
-        'namespace' => 'almaghz\laramaghz\Laramaghz\Controllers\Admin',
+        'namespace' => 'Almaghz\Laramaghz\Laramaghz\Controllers\Admin',
         'middleware' => ['web', 'adminMiddleWare']
     ], function () {
 

@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Modules\DummyClass\Models\DummyModelName;
 use App\Modules\DummyClass\Http\Requests\Admin\DummyClass\DummyClassRequest;
 use Illuminate\Http\Request;
-use almaghz\laramaghz\Traits\UploadFile;
+use Almaghz\Laramaghz\Traits\UploadFile;
 use Illuminate\Support\Facades\Storage;
 
 class DummyClassController extends Controller

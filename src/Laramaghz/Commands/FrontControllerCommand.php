@@ -1,13 +1,13 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Commands;
+namespace Almaghz\Laramaghz\Laramaghz\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use almaghz\laramaghz\Laramaghz\Models\Module;
-use almaghz\laramaghz\Laramaghz\Traits\ControllerRelationTrait;
-use almaghz\laramaghz\Laramaghz\Traits\ControllerTrait;
-use almaghz\laramaghz\Laramaghz\Traits\Upload;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Traits\ControllerRelationTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\ControllerTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\Upload;
 use Illuminate\Support\Str;
 
 class FrontControllerCommand extends Command

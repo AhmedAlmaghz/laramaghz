@@ -1,12 +1,12 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Commands;
+namespace Almaghz\Laramaghz\Laramaghz\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Str;
 
-use almaghz\laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
 
 class ServiceProviderCommand extends Command
 {

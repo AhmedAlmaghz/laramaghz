@@ -1,10 +1,10 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Seeders;
+namespace Almaghz\Laramaghz\Laramaghz\Seeders;
 
 use Illuminate\Database\Seeder;
-use almaghz\laramaghz\Laramaghz\Models\Menu;
-use almaghz\laramaghz\Laramaghz\Models\MenuItem;
+use Almaghz\Laramaghz\Laramaghz\Models\Menu;
+use Almaghz\Laramaghz\Laramaghz\Models\MenuItem;
 
 class ItemsSeeder extends Seeder
 {

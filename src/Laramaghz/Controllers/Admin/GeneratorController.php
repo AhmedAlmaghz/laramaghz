@@ -1,14 +1,14 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Controllers\Admin;
+namespace Almaghz\Laramaghz\Laramaghz\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Artisan;
-use almaghz\laramaghz\Laramaghz\Models\MenuItem;
-use almaghz\laramaghz\Laramaghz\Models\Module;
-use almaghz\laramaghz\Laramaghz\Models\Relation;
-use almaghz\laramaghz\Laramaghz\Traits\GeneratorTrait;
-use almaghz\laramaghz\Laramaghz\Traits\SeedsTrait;
+use Almaghz\Laramaghz\Laramaghz\Models\MenuItem;
+use Almaghz\Laramaghz\Laramaghz\Models\Module;
+use Almaghz\Laramaghz\Laramaghz\Models\Relation;
+use Almaghz\Laramaghz\Laramaghz\Traits\GeneratorTrait;
+use Almaghz\Laramaghz\Laramaghz\Traits\SeedsTrait;
 
 class GeneratorController extends Controller
 {

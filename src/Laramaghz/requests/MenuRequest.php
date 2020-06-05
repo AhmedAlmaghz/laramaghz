@@ -1,6 +1,6 @@
 <?php
 
-namespace almaghz\laramaghz\Laramaghz\Requests;
+namespace Almaghz\Laramaghz\Laramaghz\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Route;
