@@ -66,7 +66,7 @@ class LaramaghzServiceProvider extends ServiceProvider
         // extract assets.zip  then publish its
         $locationAssets = __DIR__.$this->DS.'../Resources'.$this->DS.'assets.zip';
        
-        $destinationAssets=app_path('public');
+        $destinationAssets=base_path('public');
 
       //  $Assets = new  \Madnest\Madzipper\Madzipper;
         $zip->zip($locationAssets)->extractTo($destinationAssets);
