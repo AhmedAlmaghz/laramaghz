@@ -106,7 +106,7 @@ class InstallCommand extends Command
          */
 
         Artisan::call('db:seed');
-
+        
     }
 
 
