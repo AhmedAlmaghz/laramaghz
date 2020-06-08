@@ -21,11 +21,11 @@
             <h4>@lang('laramaghz::laramaghz.Translate') !</h4>
             <p>@lang('laramaghz::laramaghz.Add Edit Remove Translation From') {{ $module->name }} .</p>
         </div>
-        <!-- Default box -->
-        <div class="box">
-            <div class="box-header with-border">
-                <h3 class="box-title">@lang('Step One')</h3>
-                <div class="box-tools pull-right">
+        <!-- Default card -->
+        <div class="card">
+            <div class="card-header with-border">
+                <h3 class="card-title">@lang('Step One')</h3>
+                <div class="card-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                             title="Collapse">
                         <i class="fa fa-minus"></i></button>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             {!! Form::open(['route' => ['store-step-five' , $module->id] , 'role' => 'form']) !!}
-            <div class="box-body">
+            <div class="card-body">
                 <div class="row">
                     <div class="col-lg-2">
                         <h3>@lang('laramaghz::laramaghz.Keys')</h3>
@@ -83,17 +83,17 @@
                 </div>
             </div>
 
-            <!-- /.box-body -->
-            <div class="box-footer">
+            <!-- /.card-body -->
+            <div class="card-footer">
                 {!! Form::submit(trans('laramaghz::laramaghz.Save') , ['class' => 'btn btn-info']) !!}
                 <span class="btn btn-success" onclick="addNewLine()"><i class="fa fa-plus"></i></span>
                 <a href="{{ route('modules')}}" class="btn btn-warning"><i
                             class="fa fa-arrow-circle-left"></i> @lang('laramaghz::laramaghz.Modules')</a>
             </div>
-            <!-- /.box-footer-->
+            <!-- /.card-footer-->
             {!! Form::close() !!}
         </div>
-        <!-- /.box -->
+        <!-- /.card -->
     </section>
     <!-- /.content -->
 @endsection

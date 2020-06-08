@@ -20,7 +20,7 @@
     @endif
     @if(isset($array))
         @foreach($array as $key => $value)
-            {!!  Form::checkbox($name , $key, in_array($key , $selectedArray) , ['id' => $value , 'class' => $inputClass]) !!}
+            {!!  Form::checkcard($name , $key, in_array($key , $selectedArray) , ['id' => $value , 'class' => $inputClass]) !!}
             <label for="{{ $value }}">{{ $value }}</label>
         @endforeach
     @endif

@@ -3,19 +3,27 @@
 @section('content')
     <!-- Content Header (Page header) -->
     <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+        <div class="col-sm-6">
         <h1>
-            Fixed Layout
-            <small>Blank example to the fixed layout</small>
+        Blank example to the fixed layout
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Layout</a></li>
-            <li class="active">Fixed</li>
+        </div>
+        <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Layout</a></li>
+            <li class="breadcrumb-item active">Fixed</li>
         </ol>
+        </div>
+            </div>
+</div>
     </section>
 
     <!-- Main content -->
     <section class="content">
+
         <div class="callout callout-info">
             <h4>Tip!</h4>
 
@@ -23,12 +31,15 @@
                 sidebar
                 is bigger than your content because it prevents extra unwanted scrolling.</p>
         </div>
-        <!-- Default box -->
-        <div class="box">
-            <div class="box-header with-border">
-                <h3 class="box-title">Title</h3>
+        <!-- Default card -->
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+        <div class="card">
+            <div class="card-header with-border">
+                <h3 class="card-title">Title</h3>
 
-                <div class="box-tools pull-right">
+                <div class="card-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                             title="Collapse">
                         <i class="fa fa-minus"></i></button>
@@ -37,16 +48,20 @@
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>
-            <div class="box-body">
+            <div class="card-body">
                 Start creating your amazing application!
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
+            <!-- /.card-body -->
+            <div class="card-footer">
                 Footer
             </div>
-            <!-- /.box-footer-->
+            <!-- /.card-footer-->
         </div>
-        <!-- /.box -->
+
+        <!-- /.card -->
+</div>
+        </div>
+    </div>
     </section>
     <!-- /.content -->
 @endsection

@@ -23,11 +23,11 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <!-- Default box -->
-                <div class="box">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">@lang('laramaghz::laramaghz.add item')</h3>
-                        <div class="box-tools pull-right">
+                <!-- Default card -->
+                <div class="card">
+                    <div class="card-header with-border">
+                        <h3 class="card-title">@lang('laramaghz::laramaghz.add item')</h3>
+                        <div class="card-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
                                 <i class="fa fa-minus"></i></button>
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                     {!! Form::open(['route' => 'itmes.store', 'role' => 'form']) !!}
-                        <div class="box-body">
+                        <div class="card-body">
                             @include('laramaghz::fileds.php.text' , ['name' => 'name_ar' , 'label' => trans('laramaghz::laramaghz.Item name Arabic')])
                             @include('laramaghz::fileds.php.text' , ['name' => 'name_en' , 'label' => trans('laramaghz::laramaghz.Item name English')])
                             @include('laramaghz::fileds.php.text' , ['name' => 'icon' , 'label' => trans('laramaghz::laramaghz.icon') , 'placeholder' => '<i class="fa fa-trash"></i>'])
@@ -45,21 +45,21 @@
                             @include('laramaghz::fileds.php.select' , ['name' => 'parent_id' , 'label' => trans('laramaghz::laramaghz.Parent Item') , 'array' => [ 0 => trans('laramaghz::laramaghz.No parent menu')] + $parents])
                             <input type="hidden" name="menu_id" value="{{ $menu->id }}">
                         </div>
-                        <!-- /.box-body -->
-                        <div class="box-footer">
+                        <!-- /.card-body -->
+                        <div class="card-footer">
                             {!! Form::submit(trans('laramaghz::laramaghz.Save') , ['class' => 'btn btn-info']) !!}
                         </div>
                      {!! Form::close() !!}
-                <!-- /.box-footer-->
+                <!-- /.card-footer-->
                 </div>
-                <!-- /.box -->
+                <!-- /.card -->
             </div>
 
             <div class="col-lg-8">
-                <div class="box">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">@lang('laramaghz::laramaghz.menu builder') {{ $menu->name }}</h3>
-                        <div class="box-tools pull-right">
+                <div class="card">
+                    <div class="card-header with-border">
+                        <h3 class="card-title">@lang('laramaghz::laramaghz.menu builder') {{ $menu->name }}</h3>
+                        <div class="card-tools pull-right">
                             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                                     title="Collapse">
                                 <i class="fa fa-minus"></i></button>
@@ -90,7 +90,7 @@
                                 <td colspan="3">
                                     {!! Form::model( $item , ['route' => ['itmes.update' , $item->id ], 'role' => 'form']) !!}
                                     {{ method_field('patch') }}
-                                    <div class="box-body">
+                                    <div class="card-body">
                                         @include('laramaghz::fileds.php.text' , ['name' => 'name_ar' , 'value' => $item->name_ar , 'label' => trans('laramaghz::laramaghz.Item name Arabic')])
                                         @include('laramaghz::fileds.php.text' , ['name' => 'name_en' , 'value' => $item->name_en , 'label' => trans('laramaghz::laramaghz.Item name English')])
                                         @include('laramaghz::fileds.php.text' , ['name' => 'icon' , 'value' => $item->icon , 'label' => trans('laramaghz::laramaghz.icon'), 'placeholder' => '<i class="fa fa-trash"></i>'])
@@ -98,8 +98,8 @@
                                         @include('laramaghz::fileds.php.select' , ['name' => 'parent_id', 'value' => $item->parent_id  ,  'label' => trans('laramaghz::laramaghz.Parent Item') , 'array' => [ 0 => trans('laramaghz::laramaghz.No parent menu')] + Arr::except( $parents, $item->id)])
                                         <input type="hidden" name="menu_id" value="{{ $menu->id }}">
                                     </div>
-                                    <!-- /.box-body -->
-                                    <div class="box-footer">
+                                    <!-- /.card-body -->
+                                    <div class="card-footer">
                                         {!! Form::submit(trans('laramaghz::laramaghz.Save') , ['class' => 'btn btn-info']) !!}
                                     </div>
                                     {!! Form::close() !!}
@@ -119,7 +119,7 @@
                                                 {!! Form::close() !!}
                                                 {!! Form::model( $item , ['route' => ['itmes.update' , $item->id ], 'role' => 'form' , 'style' => 'display: none']) !!}
                                                 {{ method_field('patch') }}
-                                                <div class="box-body">
+                                                <div class="card-body">
                                                     @include('laramaghz::fileds.php.text' , ['name' => 'name_ar' , 'value' => $item->name_ar , 'label' => trans('laramaghz::laramaghz.Item name Arabic')])
                                                     @include('laramaghz::fileds.php.text' , ['name' => 'name_en' , 'value' => $item->name_en , 'label' => trans('laramaghz::laramaghz.Item name English')])
                                                     @include('laramaghz::fileds.php.text' , ['name' => 'icon' , 'value' => $item->icon , 'label' => trans('laramaghz::laramaghz.icon'), 'placeholder' => '<i class="fa fa-trash"></i>'])
@@ -127,8 +127,8 @@
                                                     @include('laramaghz::fileds.php.select' , ['name' => 'parent_id', 'value' => $item->parent_id  ,  'label' => trans('laramaghz::laramaghz.Parent Item') , 'array' => [ 0 => trans('laramaghz::laramaghz.No parent menu')] + Arr::except( $parents, $item->id)])
                                                     <input type="hidden" name="menu_id" value="{{ $menu->id }}">
                                                 </div>
-                                                <!-- /.box-body -->
-                                                <div class="box-footer">
+                                                <!-- /.card-body -->
+                                                <div class="card-footer">
                                                     {!! Form::submit(trans('laramaghz::laramaghz.Save') , ['class' => 'btn btn-info']) !!}
                                                 </div>
                                                 {!! Form::close() !!}

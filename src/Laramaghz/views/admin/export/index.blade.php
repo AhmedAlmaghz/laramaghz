@@ -20,11 +20,11 @@
             <h4>@lang('laramaghz::laramaghz.laramaghz Export')!</h4>
             <p>@lang('laramaghz::laramaghz.Here you Can Export Any module you generated with laramaghz')</p>
         </div>
-        <!-- Default box -->
-        <div class="box">
-            <div class="box-header with-border">
-                <h3 class="box-title">@lang('laramaghz::laramaghz.laramaghz Export')</h3>
-                <div class="box-tools pull-right">
+        <!-- Default card -->
+        <div class="card">
+            <div class="card-header with-border">
+                <h3 class="card-title">@lang('laramaghz::laramaghz.laramaghz Export')</h3>
+                <div class="card-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
                             title="Collapse">
                         <i class="fa fa-minus"></i></button>
@@ -34,17 +34,17 @@
                 </div>
             </div>
             {!! Form::open(['route' => 'post-export', 'role' => 'form']) !!}
-                <div class="box-body">
+                <div class="card-body">
                     @include('laramaghz::fileds.php.select' , ['name' => 'module' , 'label' => trans('laramaghz::laramaghz.laramaghz Export') ,'array' => $modules   ])
                 </div>
-                <!-- /.box-body -->
-                <div class="box-footer">
+                <!-- /.card-body -->
+                <div class="card-footer">
                     {!! Form::submit(trans('laramaghz::laramaghz.Save') , ['class' => 'btn btn-info']) !!}
                 </div>
             {!! Form::close() !!}
-        <!-- /.box-footer-->
+        <!-- /.card-footer-->
         </div>
-        <!-- /.box -->
+        <!-- /.card -->
     </section>
     <!-- /.content -->
 @endsection

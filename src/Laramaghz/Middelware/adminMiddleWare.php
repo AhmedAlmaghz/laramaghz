@@ -15,11 +15,11 @@ class adminMiddleWare
             return redirect('/');
         }
 
-        if(auth()->user()->group_id != 1){
+        // if(auth()->user()->group_id != 1){
 
-            return redirect('/');
+        //     return redirect('/');
 
-        }
+        // }
 
        return $next($request) ;
     }

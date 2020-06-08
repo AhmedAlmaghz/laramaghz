@@ -4,7 +4,9 @@ DummyFilters
 <div class="col-lg-2" style="margin-top: 30px;">
     @include("laramaghz::fileds.php.radio" , [  "label"  => trans("laramaghz::laramaghz.Active") , "array" => [0 => trans("laramaghz::laramaghz.No") , 1 => trans("laramaghz::laramaghz.Yes") ] , "name" =>"active" ])
 </div>
+<div>
 	{!! Form::submit(trans('DummyName::DummyName.Search') , ['class' => 'btn btn-info' , 'style' => "margin-top:25px"]) !!}
 	<a href="{{ route('DummyName.index') }}" class="btn btn-warning"  style="margin-top:25px">{{ trans('DummyName::DummyName.Reset') }}</a>
+</div>
 </div>
 {!! Form::close() !!}

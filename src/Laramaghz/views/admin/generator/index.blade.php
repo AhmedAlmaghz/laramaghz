@@ -20,20 +20,18 @@
             <h4>@lang('laramaghz::laramaghz.Modules')!</h4>
             <p>@lang('laramaghz::laramaghz.Modules Description')</p>
         </div>
-        <!-- Default box -->
-        <div class="box">
-            <div class="box-header with-border">
-                <h3 class="box-title">@lang('laramaghz::laramaghz.Modules')</h3>
-                <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                            title="Collapse">
+        <!-- Default card -->
+        <div class="card card-info card-outline">
+            <div class="card-header with-border">
+                <h3 class="card-title">@lang('laramaghz::laramaghz.Modules')</h3>
+                <div class="card-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-card-widget="collapse">
                         <i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"
-                            title="Remove">
+                    <button type="button" class="btn btn-box-tool" data-card-widget="remove">
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>
-            <div class="box-body">
+            <div class="card-body">
                 <table class="table table-responsive table-bordered ">
                     <tr >
                         <th >
@@ -72,13 +70,13 @@
                     @endforeach
                 </table>
             </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
+            <!-- /.card-body -->
+            <div class="card-footer">
 
             </div>
-            <!-- /.box-footer-->
+            <!-- /.card-footer-->
         </div>
-        <!-- /.box -->
+        <!-- /.card -->
     </section>
     <!-- /.content -->
 @endsection

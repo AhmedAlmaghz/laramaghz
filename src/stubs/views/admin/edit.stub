@@ -3,42 +3,48 @@
 @section('content')
     <!-- Content Header (Page header) -->
     <section class="content-header">
+     <div class="container-fluid">
+            <div class="row mb-2">
+        <div class="col-sm-7">
         <h1>
             @lang('DummySmallName::DummySmallName.edit')
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="{{ route('home') }}"><i class="fa fa-dashboard"></i> @lang('DummySmallName::DummySmallName.home')</a></li>
-            <li><a href="{{ route('DummySmallName.index') }}"> @lang('DummySmallName::DummySmallName.DummySmallName')</a></li>
-            <li><a class="active">@lang('DummySmallName::DummySmallName.edit')</a></li>
+        </div>
+        <div class="col-sm-5">
+        <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="fa fa-dashboard"></i> @lang('DummySmallName::DummySmallName.home')</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('DummySmallName.index') }}"> @lang('DummySmallName::DummySmallName.DummySmallName')</a></li>
+            <li class="breadcrumb-item"><a class="active">@lang('DummySmallName::DummySmallName.edit')</a></li>
         </ol>
+        </div></div></div>
     </section>
     <!-- Main content -->
     <section class="content">
-        <!-- Default box -->
-        <div class="box">
-            <div class="box-header with-border">
-                <h3 class="box-title">@lang('DummySmallName::DummySmallName.edit')</h3>
-                <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                            title="Collapse">
+    <div class="container-fluid">
+        <!-- Default card -->
+        <div class="card card-info card-outline">
+            <div class="card-header with-border">
+                <h3 class="card-title">@lang('DummySmallName::DummySmallName.edit')</h3>
+                <div class="card-tools pull-right">
+                    <button type="button" class="btn btn-card-tool" data-card-widget="collapse">
                         <i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"
-                            title="Remove">
+                    <button type="button" class="btn btn-card-tool" data-card-widget="remove">
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>
             {!! Form::open(['route' => ['DummySmallName.update' , $row->id] , 'role' => 'form' , 'files' => true , 'method' => 'PUT']) !!}
-                <div class="box-body">
+                <div class="card-body">
                     @include('DummySmallName::admin.DummySmallName.form')
                 </div>
-                <!-- /.box-body -->
-                <div class="box-footer">
+                <!-- /.card-body -->
+                <div class="card-footer">
                     {!! Form::submit(trans('DummySmallName::DummySmallName.Save') , ['class' => 'btn btn-info']) !!}
                 </div>
             {!! Form::close() !!}
-            <!-- /.box-footer-->
+            <!-- /.card-footer-->
         </div>
-        <!-- /.box -->
+        </div>
+        <!-- /.card -->
     </section>
     <!-- /.content -->
 @endsection
