@@ -39,9 +39,10 @@
                     <button type="button" class="btn btn-box-tool" data-widget="remove">
                         <i class="fa fa-times"></i></button>
                 </div>
-            </div>
-            {!! Form::open(['route' => ['store-step-five' , $module->id] , 'role' => 'form']) !!}
+            </div> 
             <div class="card-body">
+            {!! Form::open(['route' => ['store-step-five' , $module->id] , 'role' => 'form']) !!}
+           
                 <div class="row">
                     <div class="col-lg-2">
                         <h3>@lang('laramaghz::laramaghz.Keys')</h3>

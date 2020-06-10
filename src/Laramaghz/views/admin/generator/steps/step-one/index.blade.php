@@ -24,6 +24,7 @@
     </section>
     <!-- Main content -->
     <section class="content">
+          <div class="container-fluid">
         <div class="callout callout-info">
             <h4>@lang('laramaghz::laramaghz.Step One')!</h4>
             <p>@lang('laramaghz::laramaghz.Step One Description')</p>
@@ -38,13 +39,14 @@
                     <button type="button" class="btn btn-box-tool" data-card-widget="remove">
                         <i class="fa fa-times"></i></button>
                 </div>
-            </div>
+            </div> 
+            <div class="card-body">
             @if($module)
                 {!! Form::open(['route' => ['update-step-one' , $module->id] , 'role' => 'form']) !!}
             @else
                 {!! Form::open(['route' => 'store-step-one' , 'role' => 'form']) !!}
             @endif
-                <div class="card-body">
+               
                     @include('laramaghz::fileds.php.text' , ['name' => 'name' , 'label' => trans('laramaghz::laramaghz.Module').' '.trans('laramaghz::laramaghz.Name') , 'value' => $module ? $module->name : '' ])
                     <div class="row">
                         <div class="col-lg-3">
@@ -71,6 +73,7 @@
             {!! Form::close() !!}
         </div>
         <!-- /.card -->
+          </div>
     </section>
     <!-- /.content -->
 @endsection
