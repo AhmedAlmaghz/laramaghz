@@ -86,7 +86,7 @@ return [
     'layout_topnav' => null,
     'layout_boxed' => null,
     'layout_fixed_sidebar' => null,
-    'layout_fixed_navbar' => null,
+    'layout_fixed_navbar' => true,
     'layout_fixed_footer' => null,
 
     /*
@@ -243,7 +243,7 @@ return [
         ],
         [
             'text'    => 'Generator',
-            'icon'    => 'fas fa-fw fa-share',
+            'icon'    => 'fas fa-fw fa-grip-vertical',
             'topnav' => true,
             'submenu' => [
                 [
@@ -264,7 +264,7 @@ return [
         ],
         [
             'text'    => 'Menu Setting',
-            'icon'    => 'fas fa-fw fa-menu',
+            'icon'    => 'fas fa-fw fa-caret-square-down',
             'url'  => 'admin/menu',
             'topnav' => true,
         ],
@@ -275,24 +275,24 @@ return [
             'topnav' => true,
         ],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
+            'text'        => 'Home',
+            'url'         => 'admin/index',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
         ],
         ['header' => 'Modules'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
+            'text' => 'عربي',
+            'url'  => 'ar/admin/',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
+            'text' => 'English',
+            'url'  => 'en/admin/',
             'icon' => 'fas fa-fw fa-lock',
         ],
-      
+
     ],
 
     /*
