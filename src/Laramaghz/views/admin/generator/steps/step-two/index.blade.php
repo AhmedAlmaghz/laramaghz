@@ -39,11 +39,11 @@
                 </div>
             </div>
             <div class="card-body">
-            {!! Form::open(['route' => ['store-step-two' , $module->id] , 'role' => 'form']) !!}
+             {!! Form::open(['route' => ['store-step-two' , $module->id] , 'role' => 'form']) !!}
              
                     @include('laramaghz::admin.generator.steps.step-two.stored-column')
                     <div class="all-column"></div>
-                </div>
+            </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
                     {!! Form::submit(trans('laramaghz::laramaghz.Save') , ['class' => 'btn btn-info']) !!}
