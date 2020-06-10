@@ -3,16 +3,22 @@
 @section('content')
     <!-- Content Header (Page header) -->
     <section class="content-header">
+    <div class="container-fluid">
+            <div class="row mb-2">
+        <div class="col-sm-7">
         <h1>
             @lang('laramaghz::laramaghz.laramaghz Generator')
             <small>
                 @lang('laramaghz::laramaghz.Here you will generate the Module')
             </small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="{{ route('home') }}"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a class="active">Generator</a></li>
+        </div>
+        <div class="col-sm-5">
+        <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="breadcrumb-item"><a class="active">Generator</a></li>
         </ol>
+        </div></div></div>
     </section>
     <!-- Main content -->
     <section class="content">
@@ -24,15 +30,13 @@
         <div class="row">
 
             <div class="col-lg-7">
-                <div class="box">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">@lang('laramaghz::laramaghz.Relation')</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                    title="Collapse">
+                <div class="card card-info card-outline">
+                    <div class="card-header with-border">
+                        <h3 class="card-title">@lang('laramaghz::laramaghz.Relation')</h3>
+                        <div class="card-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-card-widget="collapse">
                                 <i class="fa fa-minus"></i></button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"
-                                    title="Remove">
+                            <button type="button" class="btn btn-box-tool" data-card-widget="remove">
                                 <i class="fa fa-times"></i></button>
                         </div>
                     </div>
@@ -82,35 +86,39 @@
 
                     </table>
 
-                    <!-- /.box-body -->
-                    <div class="box-footer">
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        <div class="row">
+                            <span>
                         {!! Form::open(['route' => ['build-module' ,  $module->id] , 'role' => 'form' , 'class' => 'pull-left']) !!}
                         {!! Form::submit(trans('laramaghz::laramaghz.Build') , ['class' => 'btn btn-info']) !!}
                         {!! Form::close() !!}
+                            </span>
+                            <span>
                         {!! Form::open(['route' => ['migrate-module' ,  $module->id] , 'role' => 'form' , 'method' => 'post' ,'class' => 'pull-left' , 'style' => 'margin:0px 10px;']) !!}
                         {!! Form::submit(trans('laramaghz::laramaghz.Migrate') , ['class' => 'btn btn-info']) !!}
                         {!! Form::close() !!}
+                            </span>
+                        </div>
 
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-5">
-                <!-- Default box -->
-                <div class="box">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">@lang('laramaghz::laramaghz.Add New Relation')</h3>
-                        <div class="box-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                                    title="Collapse">
+                <!-- Default card -->
+                <div class="card card-info card-outline">
+                    <div class="card-header with-border">
+                        <h3 class="card-title">@lang('laramaghz::laramaghz.Add New Relation')</h3>
+                        <div class="card-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-card-widget="collapse">
                                 <i class="fa fa-minus"></i></button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"
-                                    title="Remove">
+                            <button type="button" class="btn btn-box-tool" data-card-widget="remove">
                                 <i class="fa fa-times"></i></button>
                         </div>
                     </div>
                     {!! Form::open(['route' => ['store-step-four' ,  $module->id] , 'role' => 'form']) !!}
-                    <div class="box-body">
+                    <div class="card-body">
                         {!! Form::hidden('module_id_from' , $module->id) !!}
                         <div class="row">
 
@@ -148,8 +156,8 @@
 
                         </div>
                     </div>
-                    <!-- /.box-body -->
-                    <div class="box-footer">
+                    <!-- /.card-body -->
+                    <div class="card-footer">
                         {!! Form::submit(trans('laramaghz::laramaghz.Save') , ['class' => 'btn btn-info']) !!}
                         <a href="{{ route('view-step-three' , ['id' => $module->id ]) }}" class="btn btn-warning"><i
                                     class="fa fa-arrow-circle-left"></i> @lang('laramaghz::laramaghz.Back')</a>
@@ -158,10 +166,10 @@
                         <a href="{{ route('view-step-one' , ['id' => $module->id ]) }}" class="btn btn-warning"><i
                                     class="fa fa-arrow-circle-left"></i> @lang('laramaghz::laramaghz.Step One')</a>
                     </div>
-                    <!-- /.box-footer-->
+                    <!-- /.card-footer-->
                     {!! Form::close() !!}
                 </div>
-                <!-- /.box -->
+                <!-- /.card -->
             </div>
 
         </div>

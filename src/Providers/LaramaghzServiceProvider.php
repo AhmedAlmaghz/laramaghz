@@ -63,14 +63,6 @@ class LaramaghzServiceProvider extends ServiceProvider
 
         $zip->zip($location)->extractTo($destination);
 
-        // extract assets.zip  then publish its
-        $locationAssets = __DIR__.$this->DS.'../Resources'.$this->DS.'assets.zip';
-       
-        $destinationAssets=base_path('public');
-
-      //  $Assets = new  \Madnest\Madzipper\Madzipper;
-        $zip->zip($locationAssets)->extractTo($destinationAssets);
-
 
         /*
          * change the auth to laramaghz auth
@@ -81,19 +73,9 @@ class LaramaghzServiceProvider extends ServiceProvider
         ], 'laramaghz');
 
 
-        /*
-         * publish Admin panel Style
-         * first put all js and css in public folder
-         */
-
-         /*
         $this->publishes([
-            __DIR__ . '/../Resources/assets' => public_path('assets'),
+            __DIR__ . '/../Resources/css' => public_path('css'),
         ], 'laramaghz');
-*/
-        /*
-         * copy All users files to modules
-         */
 
         $this->publishes([
             __DIR__ . '/../Resources/Modules' => $modulePath,

@@ -58,8 +58,12 @@ class InstallCommand extends Command
         Artisan::call('storage:link');
 
       //  Artisan::call('make:auth');
-      
+
       Artisan::call('ui bootstrap --auth');
+
+      Artisan::call('ui:controllers');
+
+       Artisan::call('adminlte:install');
 
         $path = base_path('database' . $this->DS . 'seeds' . $this->DS);
 
