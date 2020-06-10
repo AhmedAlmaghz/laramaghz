@@ -73,7 +73,9 @@ class LaramaghzServiceProvider extends ServiceProvider
         ], 'laramaghz');
 
 
-
+        $this->publishes([
+            __DIR__ . '/../Resources/css' => public_path('css'),
+        ], 'laramaghz');
 
         $this->publishes([
             __DIR__ . '/../Resources/Modules' => $modulePath,

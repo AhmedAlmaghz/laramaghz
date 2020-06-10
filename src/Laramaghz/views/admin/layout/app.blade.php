@@ -25,12 +25,32 @@
     reserved.
 @stop
 
+@section('css')
+<!-- direction RTL -->
+@if(LaravelLocalization::setLocale()=='ar')
+ <!-- Bootstrap 4 RTL -->
+ <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css">
+ <!-- Custom style for RTL -->
+ <link rel="stylesheet" href="{{ url('css/custom.css') }}">
+<!-- End direction RTL -->
+    @endif
+    
+@stop
+
 @section('js')
+
+<!-- direction RTL -->
+@if(LaravelLocalization::setLocale()=='ar')
+<!-- Bootstrap 4 rtl -->
+<script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"></script>
+<!-- End direction RTL -->
+@endif
     <script>
     $(function () {
       //Initialize Select2 Elements
       $('.select2').select2()
   });
 </script>
+
 @stack('js')
 @stop

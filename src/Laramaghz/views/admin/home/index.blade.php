@@ -23,7 +23,7 @@
 
     <!-- Main content -->
     <section class="content">
-
+    <div class="container-fluid">
         <div class="callout callout-info">
             <h4>Tip!</h4>
 
@@ -32,19 +32,17 @@
                 is bigger than your content because it prevents extra unwanted scrolling.</p>
         </div>
         <!-- Default card -->
-        <div class="container-fluid">
+   
         <div class="row">
             <div class="col">
-        <div class="card">
+        <div class="card card-info card-outline">
             <div class="card-header with-border">
                 <h3 class="card-title">Title</h3>
 
                 <div class="card-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                            title="Collapse">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
                         <i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"
-                            title="Remove">
+                    <button type="button" class="btn btn-box-tool" data-widget="remove">
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>

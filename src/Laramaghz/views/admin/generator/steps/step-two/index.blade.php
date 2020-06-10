@@ -38,8 +38,9 @@
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>
+            <div class="card-body">
             {!! Form::open(['route' => ['store-step-two' , $module->id] , 'role' => 'form']) !!}
-                <div class="card-body">
+             
                     @include('laramaghz::admin.generator.steps.step-two.stored-column')
                     <div class="all-column"></div>
                 </div>

@@ -3,19 +3,26 @@
 @section('content')
     <!-- Content Header (Page header) -->
     <section class="content-header">
+    <div class="container-fluid">
+            <div class="row mb-2">
+        <div class="col-sm-7">
         <h1>
             @lang('laramaghz::laramaghz.laramaghz Generator')
             <small>
                 @lang('laramaghz::laramaghz.Here you will generate the Module')
             </small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="{{ route('home') }}"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a class="active">Generator</a></li>
+        </div>
+        <div class="col-sm-5">
+        <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="{{ route('home') }}"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="breadcrumb-item"><a class="active">Generator</a></li>
         </ol>
+</div></div></div>
     </section>
     <!-- Main content -->
     <section class="content">
+    <div class="container-fluid">
         <div class="callout callout-info">
             <h4>@lang('laramaghz::laramaghz.Modules')!</h4>
             <p>@lang('laramaghz::laramaghz.Modules Description')</p>
@@ -60,7 +67,7 @@
                         <tr>
                             <td>{{ $module->name  }}</td>
                             <td width="100" align="center"><a href="{{ route('delete-module' , ['id' => $module->id]) }}" class="btn btn-danger"><i class="fa fa-trash"></i></a></td>
-                            <td width="100" align="center"><a href="{{ route('view-step-one' , ['id' => $module->id]) }}" class="btn btn-warning"><i class="fa fa-gear"></i></a></td>
+                            <td width="100" align="center"><a href="{{ route('view-step-one' , ['id' => $module->id]) }}" class="btn btn-warning"><i class="fa fa-cog"></i></a></td>
                             <td width="100" align="center"><a href="{{ route('view-step-two' , ['id' => $module->id]) }}" class="btn btn-success"><i class="fa fa-database"></i></a></td>
                             <td width="100" align="center"><a href="{{ route('view-step-three' , ['id' => $module->id]) }}" class="btn btn-success"><i class="fa fa-check"></i></a></td>
                             <td width="100" align="center"><a href="{{ route('view-step-four' , ['id' => $module->id]) }}" class="btn btn-success"><i class="fa fa-link"></i></a></td>
@@ -77,6 +84,7 @@
             <!-- /.card-footer-->
         </div>
         <!-- /.card -->
+    </div>
     </section>
     <!-- /.content -->
 @endsection
