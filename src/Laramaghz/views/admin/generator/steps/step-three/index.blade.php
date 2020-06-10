@@ -41,8 +41,9 @@
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>
-            {!! Form::open(['route' => ['store-step-three' ,  $module->id] , 'role' => 'form']) !!}
             <div class="card-body">
+            {!! Form::open(['route' => ['store-step-three' ,  $module->id] , 'role' => 'form']) !!}
+            
                 <table class="table table-bordered table-responsive ">
                 <thead>
                 <tr>

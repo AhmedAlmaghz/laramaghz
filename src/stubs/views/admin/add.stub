@@ -31,9 +31,10 @@
                     <button type="button" class="btn btn-card-tool" data-card-widget="remove">
                         <i class="fa fa-times"></i></button>
                 </div>
-            </div>
+            </div> 
+             <div class="card-body">
             {!! Form::open(['route' => 'DummySmallName.store' , 'role' => 'form' , 'files' => true]) !!}
-            <div class="card-body">
+          
                 @include('DummySmallName::admin.DummySmallName.form')
             </div>
             <!-- /.card-body -->

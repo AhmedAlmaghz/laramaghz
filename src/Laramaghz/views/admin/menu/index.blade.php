@@ -27,21 +27,22 @@
             <h4>    @lang('laramaghz::laramaghz.menu control')!</h4>
             <p> @lang('laramaghz::laramaghz.Here you Can control your menu')</p>
         </div>
-        <div class="row card-info card-outline">
+        <div class="row">
             <div class="col-lg-4">
                 <!-- Default card -->
-                <div class="card">
+                <div class="card card-info card-outline">
                     <div class="card-header with-border">
                         <h3 class="card-title">@lang('laramaghz::laramaghz.add menu')</h3>
                         <div class="card-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <button type="button" class="btn btn-box-tool" data-card-widget="collapse">
                                 <i class="fa fa-minus"></i></button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove">
+                            <button type="button" class="btn btn-box-tool" data-card-widget="remove">
                                 <i class="fa fa-times"></i></button>
                         </div>
-                    </div>
+                    </div> 
+                     <div class="card-body">
                     {!! Form::open(['route' => 'post-menu', 'role' => 'form']) !!}
-                    <div class="card-body">
+                 
                         @include('laramaghz::fileds.php.text' , ['name' => 'name' , 'label' => trans('laramaghz::laramaghz.Menu name')])
                     </div>
                     <!-- /.card-body -->
@@ -58,9 +59,9 @@
                     <div class="card-header with-border">
                         <h3 class="card-title">   @lang('laramaghz::laramaghz.menu control')</h3>
                         <div class="card-tools pull-right">
-                            <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <button type="button" class="btn btn-box-tool" data-card-widget="collapse">
                                 <i class="fa fa-minus"></i></button>
-                            <button type="button" class="btn btn-box-tool" data-widget="remove">
+                            <button type="button" class="btn btn-box-tool" data-card-widget="remove">
                                 <i class="fa fa-times"></i></button>
                         </div>
                     </div>
