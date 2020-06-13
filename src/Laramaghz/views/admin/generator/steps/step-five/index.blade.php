@@ -8,9 +8,7 @@
         <div class="col-sm-7">
         <h1>
             @lang('laramaghz::laramaghz.laramaghz')
-            <small>
-                @lang('laramaghz::laramaghz.Translate') {{ $module->name }}
-            </small>
+           
         </h1>
 
         </div>

@@ -31,14 +31,15 @@
             <div class="card-header with-border">
                 <h3 class="card-title">@lang('laramaghz::laramaghz.laramaghz Export')</h3>
                 <div class="card-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                    <button type="button" class="btn btn-box-tool" data-card-widget="collapse">
                         <i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove">
+                    <button type="button" class="btn btn-box-tool" data-card-widget="remove">
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>
+             <div class="card-body">
             {!! Form::open(['route' => 'post-export', 'role' => 'form']) !!}
-                <div class="card-body">
+               
                     @include('laramaghz::fileds.php.select' , ['name' => 'module' , 'label' => trans('laramaghz::laramaghz.laramaghz Export') ,'array' => $modules   ])
                 </div>
                 <!-- /.card-body -->

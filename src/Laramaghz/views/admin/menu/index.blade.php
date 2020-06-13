@@ -8,9 +8,9 @@
         <div class="col-sm-7">
         <h1>
             @lang('laramaghz::laramaghz.menu control')
-            <small>
+            <!-- <small>
                 @lang('laramaghz::laramaghz.Here you Can control your menu')
-            </small>
+            </small> -->
         </h1>
         </div>
         <div class="col-sm-5">

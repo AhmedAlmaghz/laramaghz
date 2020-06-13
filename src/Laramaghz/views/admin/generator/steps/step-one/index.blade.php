@@ -8,9 +8,7 @@
         <div class="col-sm-7">
         <h1>
             @lang('laramaghz::laramaghz.laramaghz Generator')
-            <small>
-                @lang('laramaghz::laramaghz.Here you will generate the Module')
-            </small>
+           
         </h1>
         </div>
 
