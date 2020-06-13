@@ -1,5 +1,6 @@
 *{
     direction: rtl !important;
+    font-family: 'Cairo', sans-serif!important;
 }
 .layout-fixed .main-sidebar {
     right: 0;

@@ -238,7 +238,7 @@ return [
         ],
         [
             'text' => 'Home',
-            'url'  => 'admin/index',
+            'url'  => 'admin',
             'can'  => 'manage-blog',
         ],
         [
@@ -275,23 +275,31 @@ return [
             'topnav' => true,
         ],
         [
-            'text'        => 'Home',
-            'url'         => 'admin/index',
+            'text'    => 'Lang',
+            'icon'    => 'fas fa-fw fa-language',
+            'topnav' => true,
+            'submenu' => [
+                        [
+                            'text' => 'عربي',
+                            'url'  => 'ar/admin/',
+                            'icon' => 'fas fa-fw fa-user',
+                        ],
+                        [
+                            'text' => 'English',
+                            'url'  => 'en/admin/',
+                            'icon' => 'fas fa-fw fa-lock',
+                        ],
+            ],
+        ],
+        [
+            'text'        => 'Dashboard',
+            'url'         =>'admin',
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
         ],
         ['header' => 'Modules'],
-        [
-            'text' => 'عربي',
-            'url'  => 'ar/admin/',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'English',
-            'url'  => 'en/admin/',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
+
 
     ],
 

@@ -57,52 +57,52 @@ class InstallCommand extends Command
 
         Artisan::call('storage:link');
 
-      //  Artisan::call('make:auth');
+        //  Artisan::call('make:auth');
 
-      Artisan::call('ui bootstrap --auth');
+        Artisan::call('ui bootstrap --auth');
 
-      Artisan::call('ui:controllers');
+        Artisan::call('ui:controllers');
 
-       Artisan::call('adminlte:install');
+        Artisan::call('adminlte:install');
 
         $path = base_path('database' . $this->DS . 'seeds' . $this->DS);
 
         $name = '';
 
         $this->filesystem->put(
-            fixPath($path . 'DatabaseSeeder.php')
-            , $this->buildFile($this->getEditStub(), $name)
+            fixPath($path . 'DatabaseSeeder.php'),
+            $this->buildFile($this->getEditStub(), $name)
         );
 
         $this->filesystem->put(
-            fixPath(app_path('Http/Controllers/Auth/RegisterController.php'))
-            , $this->buildFile($this->getRegisterControllerStub(), $name)
+            fixPath(app_path('Http/Controllers/Auth/RegisterController.php')),
+            $this->buildFile($this->getRegisterControllerStub(), $name)
         );
 
         $this->filesystem->put(
-            fixPath(base_path('resources/views/layouts/app.blade.php'))
-            , $this->buildFile($this->getAppStub(), $name)
+            fixPath(base_path('resources/views/layouts/app.blade.php')),
+            $this->buildFile($this->getAppStub(), $name)
         );
 
 
         $this->filesystem->put(
-            fixPath(base_path('config/laramaghz.php'))
-            , $this->buildFile($this->getConfigStub(), $name)
+            fixPath(base_path('config/laramaghz.php')),
+            $this->buildFile($this->getConfigStub(), $name)
         );
 
         $this->filesystem->put(
-            fixPath(base_path('config/laravellocalization.php'))
-            , $this->buildFile($this->getLangStub(), $name)
+            fixPath(base_path('config/laravellocalization.php')),
+            $this->buildFile($this->getLangStub(), $name)
         );
 
         $this->filesystem->put(
-            fixPath(base_path('config/app.php'))
-            , $this->buildFile($this->getProviderStub(), $name)
+            fixPath(base_path('config/app.php')),
+            $this->buildFile($this->getProviderStub(), $name)
         );
 
         $this->filesystem->put(
-            fixPath(base_path('app/Http/Kernel.php'))
-            , $this->buildFile($this->getKernelStub(), $name)
+            fixPath(base_path('app/Http/Kernel.php')),
+            $this->buildFile($this->getKernelStub(), $name)
         );
 
         /*
@@ -110,7 +110,6 @@ class InstallCommand extends Command
          */
 
         Artisan::call('db:seed');
-        
     }
 
 
@@ -188,7 +187,6 @@ class InstallCommand extends Command
         $stub = $this->filesystem->get($stub);
 
         return $this->replaceName($stub, $name);
-
     }
 
     /**
@@ -203,5 +201,4 @@ class InstallCommand extends Command
     {
         return str_replace('DummyName', $name, $stub);
     }
-
 }

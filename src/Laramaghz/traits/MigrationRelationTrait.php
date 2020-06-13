@@ -69,13 +69,18 @@ trait MigrationRelationTrait
 
                 $primaryTable = mb_strtolower($relation->module_from->name);
 
-                $data .= "\t\t\t\t".'$table->unsignedInteger("'.$primaryName.'");'."\n";
+                /////////////////////////
+                //maghz change -- to Add Relatio To Table Migate
 
-                $data .= "\t\t\t\t".'$table->foreign("'.$primaryName.'")->references("'.$primaryKeyId.'")->on("'.$primaryTable.'")->onDelete("cascade")->onUpdate("cascade");'."\n";
+                // $data .= "\t\t\t\t".'$table->unsignedInteger("'.$primaryName.'");'."\n";
+             $data .= "\t\t\t\t".'$table->integer("'.$primaryName.'");'."\n";
 
-                $data .= "\t\t\t\t".'$table->unsignedInteger("'.$foreignName.'");'."\n";
+                // $data .= "\t\t\t\t".'$table->foreign("'.$primaryName.'")->references("'.$primaryKeyId.'")->on("'.$primaryTable.'")->onDelete("cascade")->onUpdate("cascade");'."\n";
 
-                $data .= "\t\t\t\t".'$table->foreign("'.$foreignName.'")->references("'.$foreignKeyId.'")->on("'.$foreignTable.'")->onDelete("cascade")->onUpdate("cascade");'."\n";
+                // $data .= "\t\t\t\t".'$table->unsignedInteger("'.$foreignName.'");'."\n";
+             $data .= "\t\t\t\t".'$table->integer("'.$foreignName.'");'."\n";
+
+                // $data .= "\t\t\t\t".'$table->foreign("'.$foreignName.'")->references("'.$foreignKeyId.'")->on("'.$foreignTable.'")->onDelete("cascade")->onUpdate("cascade");'."\n";
 
                 $array[] =  [ $relation->module_to->name => $data ];
 
@@ -105,11 +110,13 @@ trait MigrationRelationTrait
                 $name = Str::singular(mb_strtolower($relation->module_to->name)).'_'.$primaryKey;
 
                 $foreignTable = mb_strtolower($relation->module_to->name);
+//////////////////
+                  //maghz change  to Add Relatio To Table Migate
+                // $data .= "\t\t\t\t".'$table->unsignedInteger("'.$name.'");'."\n";
+                 $data .= "\t\t\t\t".'$table->integer("'.$name.'");'."\n";
 
-                $data .= "\t\t\t\t".'$table->unsignedInteger("'.$name.'");'."\n";
-
-                $data .= "\t\t\t\t".'$table->foreign("'.$name.'")->references("'.$primaryKey.'")->on("'.$foreignTable.'")->onDelete("cascade")->onUpdate("cascade");'."\n";
-
+                // $data .= "\t\t\t\t".'$table->foreign("'.$name.'")->references("'.$primaryKey.'")->on("'.$foreignTable.'")->onDelete("cascade")->onUpdate("cascade");'."\n";
+/////////////////////
             }
 
         }

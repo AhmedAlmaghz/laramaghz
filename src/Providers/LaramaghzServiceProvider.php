@@ -37,7 +37,7 @@ use Almaghz\Laramaghz\Laramaghz\Traits\FileTrait;
 class LaramaghzServiceProvider extends ServiceProvider
 {
 
-   use FileTrait;
+    use FileTrait;
 
     protected $DS = DIRECTORY_SEPARATOR;
 
@@ -55,7 +55,7 @@ class LaramaghzServiceProvider extends ServiceProvider
 
         $this->createFolder($modulePath);
 
-        $location = __DIR__.$this->DS.'../Resources'.$this->DS.'Modules'.$this->DS.'Users.zip';
+        $location = __DIR__ . $this->DS . '../Resources' . $this->DS . 'Modules' . $this->DS . 'Users.zip';
 
         $destination = app_path('Modules');
 
@@ -73,14 +73,28 @@ class LaramaghzServiceProvider extends ServiceProvider
         ], 'laramaghz');
 
 
-        $this->publishes([
-            __DIR__ . '/../Resources/css' => public_path('css'),
-        ], 'laramaghz');
-
+        /**
+         * Publish Users Module to App\Modules
+         */
         $this->publishes([
             __DIR__ . '/../Resources/Modules' => $modulePath,
         ], 'laramaghz');
 
+        /**
+         *  Publish AppServiceProvider.php To  App\Providers  
+         * this Service Provider builte Dynamice Menu And Submenu for Dashboard (laravel-adminLTE Package)
+         */
+        $this->publishes([
+            __DIR__ . '/../Resources/AppServiceProvider.php' => app_path('Providers/AppServiceProvider.php'),
+        ], 'laramaghz');
+
+        /**
+         *  Publish custom.css To  public css  
+         * this file for Support RTL Language with laravel-adminLTE Package
+         */
+        $this->publishes([
+            __DIR__ . '/../Resources/css' => public_path('css'),
+        ], 'laramaghz');
 
         /*
          * load laramaghz language files
@@ -143,7 +157,6 @@ class LaramaghzServiceProvider extends ServiceProvider
             FrontFormCommand::class,
             FrontRequestCommand::class
         ]);
-
     }
 
     /**
@@ -164,7 +177,6 @@ class LaramaghzServiceProvider extends ServiceProvider
         $this->registerHelpers('crud');
         $this->registerHelpers('lang');
         $this->registerHelpers('function');
-
     }
 
     /**
@@ -211,13 +223,9 @@ class LaramaghzServiceProvider extends ServiceProvider
                         $nameSpace = 'App\\Modules\\' . $moduleName . '\\Providers\\' . 'laramaghz' . $moduleName . 'ServicesProvider';
 
                         app()->register($nameSpace);
-
                     }
                 }
             }
         }
-
     }
-
-
 }
