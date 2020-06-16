@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "laravelcollective/html":"^6.1.0",
+        "php": ">=7.2.5",
+        "laravelcollective/html":"^6.1.2",
         "mcamara/laravel-localization": "^1.5",
         "madnest/madzipper": "1.0.x",
         "laravel/ui": ">=2.0",
