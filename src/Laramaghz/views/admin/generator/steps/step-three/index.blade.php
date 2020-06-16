@@ -8,9 +8,7 @@
         <div class="col-sm-7">
         <h1>
             @lang('laramaghz::laramaghz.laramaghz Generator')
-            <small>
-                @lang('laramaghz::laramaghz.Here you will generate the Module')
-            </small>
+            
         </h1>
         </div>
         <div class="col-sm-5">
@@ -41,8 +39,9 @@
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>
-            {!! Form::open(['route' => ['store-step-three' ,  $module->id] , 'role' => 'form']) !!}
             <div class="card-body">
+            {!! Form::open(['route' => ['store-step-three' ,  $module->id] , 'role' => 'form']) !!}
+            
                 <table class="table table-bordered table-responsive ">
                 <thead>
                 <tr>

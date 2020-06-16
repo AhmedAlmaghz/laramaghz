@@ -32,7 +32,7 @@ DummyHeader
                         <tr>
 DummyBody
                             <th>
-                                <a href="{{ route('front.DummySmallName.edit' , ['id' => $row->id ]) }}" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                                <a href="{{ url()->current().'/'.$row->id.'/edit' }}" class="btn btn-info"><i class="fa fa-edit"></i></a>
                             </th>
                             <th>
                                  {!! Form::open(['route' => ['front.DummySmallName.destroy' , $row->id], 'method' => 'delete']) !!}

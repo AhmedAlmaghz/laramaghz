@@ -7,14 +7,13 @@
             <div class="row mb-2">
         <div class="col-sm-6">
         <h1>
-        Blank example to the fixed layout
+       Dashboard
         </h1>
         </div>
         <div class="col-sm-6">
         <ol class="breadcrumb float-sm-right">
             <li class="breadcrumb-item"><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Layout</a></li>
-            <li class="breadcrumb-item active">Fixed</li>
+            <li class="breadcrumb-item active">Dashboard</li>
         </ol>
         </div>
             </div>
@@ -23,28 +22,24 @@
 
     <!-- Main content -->
     <section class="content">
-
+    <div class="container-fluid">
         <div class="callout callout-info">
             <h4>Tip!</h4>
 
-            <p>Add the fixed class to the body tag to get this layout. The fixed layout is your best option if your
-                sidebar
-                is bigger than your content because it prevents extra unwanted scrolling.</p>
+            <p> LaraMaghz - Amazing ,Easy and Scalable Applications By laravel 7 -(Dashborad Admin , Web and Api) </p>
         </div>
         <!-- Default card -->
-        <div class="container-fluid">
+   
         <div class="row">
             <div class="col">
-        <div class="card">
+        <div class="card card-info card-outline">
             <div class="card-header with-border">
-                <h3 class="card-title">Title</h3>
+                <h3 class="card-title">Laramaghz</h3>
 
                 <div class="card-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                            title="Collapse">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse">
                         <i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"
-                            title="Remove">
+                    <button type="button" class="btn btn-box-tool" data-widget="remove">
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>

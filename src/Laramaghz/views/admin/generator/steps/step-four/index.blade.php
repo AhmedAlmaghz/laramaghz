@@ -8,9 +8,7 @@
         <div class="col-sm-7">
         <h1>
             @lang('laramaghz::laramaghz.laramaghz Generator')
-            <small>
-                @lang('laramaghz::laramaghz.Here you will generate the Module')
-            </small>
+           
         </h1>
         </div>
         <div class="col-sm-5">
@@ -22,6 +20,8 @@
     </section>
     <!-- Main content -->
     <section class="content">
+    <div class="container-fluid">
+
         <div class="callout callout-info">
             <h4>@lang('laramaghz::laramaghz.Step Four')!</h4>
             <p>@lang('laramaghz::laramaghz.Step Four Description')</p>
@@ -40,7 +40,7 @@
                                 <i class="fa fa-times"></i></button>
                         </div>
                     </div>
-
+                <div class="card-body">
                     <table class="table table-bordered ">
 
                         <tr>
@@ -85,7 +85,7 @@
                         @endif
 
                     </table>
-
+                </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
                         <div class="row">
@@ -117,8 +117,9 @@
                                 <i class="fa fa-times"></i></button>
                         </div>
                     </div>
+                      <div class="card-body">
                     {!! Form::open(['route' => ['store-step-four' ,  $module->id] , 'role' => 'form']) !!}
-                    <div class="card-body">
+                  
                         {!! Form::hidden('module_id_from' , $module->id) !!}
                         <div class="row">
 
@@ -173,7 +174,7 @@
             </div>
 
         </div>
-
+    </div>
     </section>
     <!-- /.content -->
 @endsection

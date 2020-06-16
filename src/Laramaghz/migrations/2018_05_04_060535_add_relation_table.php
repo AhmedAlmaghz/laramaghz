@@ -20,8 +20,8 @@ class AddRelationTable extends Migration
              * the primary relation module
              */
 
-            $table->integer('module_from_id')->unsigned();
-            $table->foreign('module_from_id')->references('id')->on('modules')->onDelete('cascade')->obUpdate('cascade');
+            $table->integer('module_from_id');//->unsigned();
+          //  $table->foreign('module_from_id')->references('id')->on('modules')->onDelete('cascade')->obUpdate('cascade');
 
             /*
              * the foreign relation module
@@ -35,8 +35,8 @@ class AddRelationTable extends Migration
              * or checkbox
              */
 
-            $table->integer('column_id')->unsigned();
-            $table->foreign('column_id')->references('id')->on('columns')->onDelete('cascade')->obUpdate('cascade');
+            $table->integer('column_id');//->unsigned();
+          //  $table->foreign('column_id')->references('id')->on('columns')->onDelete('cascade')->obUpdate('cascade');
 
 
             $table->string('type')->nullable();

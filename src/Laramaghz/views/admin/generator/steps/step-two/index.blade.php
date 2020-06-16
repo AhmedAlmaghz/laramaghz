@@ -9,10 +9,7 @@
 
         <h1>
             @lang('laramaghz::laramaghz.laramaghz Generator')
-            <small>
-                @lang('laramaghz::laramaghz.Here you will generate the Module')
-            </small>
-        </h1>
+                   </h1>
         </div>
         <div class="col-sm-5">
         <ol class="breadcrumb float-sm-right">
@@ -38,11 +35,12 @@
                         <i class="fa fa-times"></i></button>
                 </div>
             </div>
-            {!! Form::open(['route' => ['store-step-two' , $module->id] , 'role' => 'form']) !!}
-                <div class="card-body">
+            <div class="card-body">
+             {!! Form::open(['route' => ['store-step-two' , $module->id] , 'role' => 'form']) !!}
+             
                     @include('laramaghz::admin.generator.steps.step-two.stored-column')
                     <div class="all-column"></div>
-                </div>
+            </div>
                 <!-- /.card-body -->
                 <div class="card-footer">
                     {!! Form::submit(trans('laramaghz::laramaghz.Save') , ['class' => 'btn btn-info']) !!}
