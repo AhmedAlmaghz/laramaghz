@@ -1,6 +1,10 @@
 {
     "name": "almaghz/laramaghz",
+<<<<<<< HEAD
     // "version": "1.0.8",
+=======
+    "version": "1.0.8",
+>>>>>>> 5a9db83546f00296ec12b46204a5f3229bd64c83
     "description": "laraMaghz package - laravel Admin,web and API",
     "license": "MIT",
     "keywords": ["laravel","laravel Admin","laramaghz","maghz","admin","web","api","crud"],
